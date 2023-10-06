@@ -1,0 +1,16 @@
+{
+  "welcomeFile": "/app/risks/webapp/index.html",
+  "routes": [
+    {
+      "source": "^/app/(.*)$",
+      "localDir": "./",
+      "target": "$1",
+      "cacheControl": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "source": "^/service/(.*)$",
+      "target": "$1",
+      "destination": "srv-api"
+    }
+  ]
+}
